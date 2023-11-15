@@ -1,0 +1,444 @@
+:root{
+    --main-font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --line-height:1.5;
+    --main-color:#4e4e4e;
+    --secondry-color:#007aff;
+    --animation-duration: 500ms ;
+}
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: var(--main-font);
+   
+}
+
+/* .body{
+    background-color: #dee2e6;
+} */
+/* Start Of Nav */
+header{
+    background-image: url("../img/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: var(--main-font);
+}
+
+.nav-item ul li a:hover{
+    color: var(--secondry-color);
+}
+
+.nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+}
+.nav-item .nav-link:hover::before{
+    width: 100%;
+    transition: var(--animation-duration) all;
+}
+/* End Of Nav */
+
+
+/* Start Of Home */
+
+.container-fluid .home-sec h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+.container-fluid .home-sec p{
+    text-align: center;
+}
+.container-fluid .home-sec p::after{
+    content: "D|";
+    animation: words 10s infinite;
+}
+
+@keyframes words {
+    0%{
+        content: "D|";
+    }
+    1.5%{
+        content: "De|";
+    }
+    3%{
+        content: "Des|";
+    }
+    4.5%{
+        content: "Desi|";
+    }
+    6%{
+        content: "Desig|";
+    }
+    7.5%{
+        content: "Design|";
+    }
+    9%{
+        content: "Designe|";
+    }
+    10.5%{
+        content: "Designer|";
+    }
+    12%{
+        content: "Designe|";
+    }
+    13.5%{
+        content: "Design|";
+    }
+    15%{
+        content: "Desig|";
+    }
+    16.5%{
+        content: "Desi|";
+    }
+    18%{
+        content: "Des|";
+    }
+    19.5%{
+        content: "De|";
+    }
+    21%{
+        content: "D|";
+    }
+    22.5%{
+        content: "|";
+    }
+    24%{
+        content: "F|";
+    }
+    25.5%{
+        content: "Fr|";
+    }
+    27%{
+        content: "Fre|";
+    }
+    28.5%{
+        content: "Free|";
+    }
+    30%{
+        content: "Freel|";
+    }
+    31.5%{
+        content: "Freela|";
+    }
+    33%{
+        content: "Freelan|";
+    }
+    34.5%{
+        content: "Freelanc|";
+    }
+    36%{
+        content: "Freelance|";
+    }
+    37.5%{
+        content: "Freelancer|";
+    }
+    39%{
+        content: "Freelance|";
+    }
+    40.5%{
+        content: "Freelanc|";
+    }
+    42%{
+        content: "Freelan|";
+    }
+    43.5%{
+        content: "Freela|";
+    }
+    45%{
+        content: "Freel|";
+    }
+    46.5%{
+        content: "Free|";
+    }
+    48%{
+        content: "Fre|";
+    }
+    49.5%{
+        content: "Fr|";
+    }
+    51%{
+        content: "F|";
+    }
+    52.5%{
+        content: "|";
+    }
+    54%{
+        content: "P|";
+    }
+    55.5%{
+        content: "Ph|";
+    }
+    56.5%{
+        content: "Pho|";
+    }
+    58%{
+        content: "Phot|";
+    }
+    59.5%{
+        content: "Photo|";
+    }
+    61%{
+        content: "Photog|";
+    }
+    62.5%{
+        content: "Photogr|";
+    }
+    64%{
+        content: "Photogra|";
+    }
+    65.5%{
+        content: "Photograp|";
+    }
+    67%{
+        content: "Photograph|";
+    }
+    68.5%{
+        content: "Photographe|";
+    }
+    70%{
+        content: "Photographer|";
+    }
+    71.5%{
+        content: "Photographe|";
+    }
+    73%{
+        content: "Photograph|";
+    }
+    74.5%{
+        content: "Photograp|";
+    }
+    76%{
+        content: "Photogra|";
+    }
+    77.5%{
+        content: "Photogr|";
+    }
+    79%{
+        content: "Photog|";
+    }
+    80.5%{
+        content: "Photo|";
+    }
+    82%{
+        content: "Phot|";
+    }
+    84%{
+        content: "Pho|";
+    }
+    86%{
+        content: "Ph|";
+    }
+    88%{
+        content: "P|";
+    }
+    90%{
+        content: "|";
+    }
+    100%{
+        content: "|";
+    }
+}
+/* End Of Home */
+
+/* Start Of About Me */
+
+.about-me h2::before{
+    content: "";
+    width: 20%;
+    height: 3px;
+    position: absolute;
+    top: 45px;
+   background-color: var(--secondry-color);
+}
+
+/* End Of About Me */
+
+/* Start Of Services */
+.serve-underline p::before{
+    content: "";
+    
+    width: 8%;
+    height: 5px;
+    margin-left: 14%;
+    position: absolute;
+    bottom: -30px ;
+   background-color: var(--secondry-color);
+}
+
+.icon-show {
+    padding: 25px;
+    border: var(--secondry-color) solid 10px;
+    border-radius: 50%;
+    margin: auto;
+
+}
+.icon-show i {
+    font-size: 50px;
+}
+
+.card:hover .icon-show{
+    background-color: #007aff;
+    border-color:#0b3e75;
+    transition: 1s all;
+}
+
+.card:hover .icon-show .icon-i{
+    color:white;
+    transition: var(--animation-duration) all;
+}
+
+.icon-i{
+    color: black;
+}
+/* End Of Services */
+
+/* Start Of Part Serv */
+    .part-serv{
+        background-image: url("../img/post-3.jpg");
+        background-size:cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .serv-color{
+        background-color: #007bff81;
+        
+    }
+
+    .serv-color div i {
+        border:#75b5ffe0 solid 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
+/* End Of Part Serv */
+
+/* Start Of Protfolio */
+.cont-dv .card-text{
+    font-size: 13px;
+}
+.card .img-scal:hover{
+    transform: scale(1.3);
+    transition: all 1s;
+   
+}
+
+/* End Of Protfolio */
+
+
+/* Start Of Part Portfolio */
+
+.carousel-item img {
+    width: 100px;
+}
+
+.part-port , .back-contact{
+    background-image: url("../img/overlay-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.part-on , .contact-color{
+    margin-left: -11px !important;
+    margin-right: -11px !important;
+}
+
+.carousel-item img {
+    width: 150px;
+    position: relative;
+    left: 44%;
+}
+
+/* End Of Part Partfolio */
+
+/* Start Of Blog */
+.card-body .h-blog a{
+    color: black;
+}
+.card-body .h-blog a:hover {
+    color: #007aff;
+    transition: var(--animation-duration) all;
+}
+.card-body .par-blog{
+    font-size: 15px;
+}
+
+.fot-blog img {
+    width: 30px;
+}
+.fot-blog p a {
+    color: var(--main-color);
+    font-size: 15px;
+}
+.fot-blog p a:hover{
+    color: var(--secondry-color);
+    transition: var(--animation-duration) all;
+}
+
+.blog-si p{
+    font-size: 15px;
+}
+.between-blog{
+    width: 100px;
+    position: relative;
+    left: 36%;
+    top: -20px;
+}
+
+.between-blog p{
+    font-size: 12px;
+    position: relative;
+    top: 7px;
+}
+.change-m {
+    margin-top: -10px;
+}
+
+/* End Of Blog */
+
+/* Start Of Contact */
+form .form-shad:hover{
+    box-shadow: #007aff 1px 1px 10px 3px;
+    transition: var(--animation-duration) all;
+}
+
+form button{
+    width: 35%;
+    position: relative;
+    left: 34%;
+}
+
+form button:hover{
+    box-shadow: #68b0fd 1px 1px 10px 3px;
+    transition: var(--animation-duration) all;
+}
+
+.about-me .par-contact{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+
+.social-icon i{
+    color: black;
+    border-color:#007aff !important;
+}
+
+.social-icon i:hover{
+    color: white;
+    background-color: #007aff;
+    border-color:#0b3e75 !important;
+    transition: var(--animation-duration) all;
+}
+/* End Of Contact */
+
+/* Start Of Footer */
+.margin-end-f{
+    margin-bottom: -20px ;
+}
+
+/* End Of Footer */
